@@ -5,4 +5,4 @@ Portafolio desarrollado con HTML5, CSS3 & JavaScript
 ## CV
 
 Enlace del Portafolio
-- [Portafolio-CV](ttps://hazielace.github.io/MilagrosPeqque-a)
+- [Portafolio-CV](https://hazielace.github.io/MilagrosPeqque-a)
