@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 80px 0;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+progress{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #808080;
+}
+
+progress::-webkit-progress-value{
+    background-color: #dc143c;
+}
+
+.progress {
+    margin: 0.8rem auto;
+}
+  
+.progress > p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: #dc143c;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 2.10rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu  li a{
+
+    padding: 1.2rem;
+    font-size: 1.12rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color: #dc143c;
+}
+
+.navbar.sticky .menu  li a:hover{
+    color: #fff;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        right: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+.home{
+    display: flex;
+    background: url("assets/img/hero-image.png") no-repeat center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content h2{
+    font-size: 7.5vw;;
+    font-weight: 600;
+    margin: 1.5rem;
+}
+
+.home-content a{
+    display: inline-block;
+    padding: 1.2rem 1.8rem;
+    margin-top: 1rem;
+    background-color: #dc143c;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.home-content a:hover{
+    background-color: #ff7989;
+    color: #000000;
+    font-weight: 600px;
+}
+
+.full-lg-screen{
+    width: 100%;
+   
+}
+
+.about{
+    
+    align-content: center;
+    padding: 1.2rem 50px;
+    font-size: 1.2rem;
+}
+
+.about-title{
+    border-top: thin solid #dc143c;
+    border-bottom: thin solid #dc143c;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: #000;
+}
+
+img{
+    max-width: 100%;
+    height: 400px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size:  0.9rem;
+}
+
+p{
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 1.8rem;
+    margin-top: 1rem;
+    background-color: #dc143c;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #ff7989;
+    color: #000000;
+    font-weight: 700px;
+}
+
+.text-lg-right{
+    text-align: right;
+}
+
+.text-lg-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.portafolio{
+    background: #eeeeee;
+    color: #fff;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.portafolio-title{
+    border-top: thin solid #dc143c;
+    border-bottom: thin solid #dc143c;
+    margin: 2rem auto;
+    margin-top: 0;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: #000;
+}
+
+.portafolio-card{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.portafolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.portafolio-card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #dc143c;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.portafolio-card:hover .portafolio-card-info {
+    opacity: 1;
+    pointer-events: auto;
+}
+  
+.portafolio-card-info > div {
+    padding: 1rem;
+    border: thin solid #fff;
+    width: 100%;
+    height: 100%;
+}  
+
+.about > article {
+    margin-bottom: 2rem;
+  }
+
+@media screen and (min-width: 780px) {
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+        align-content: center;
+    }
+  
+    .portafolio > .container {
+      display: grid;
+      grid-template-columns: repeat(3, 33.2%);
+      align-content: center;
+    }
+
+    .contacto > .container {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 24%);
+    }
+
+}
+
+.contacto-title{
+    border-top: thin solid #dc143c;
+    border-bottom: thin solid #dc143c;
+    margin: 2rem auto 4rem;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: #000;
+}
+
+.contacts{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.contacts a:hover{
+    color: #dc143c;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.footer{
+    background-color: #111;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.footer span{
+    color: #fff;
+    font-size: 1.2rem;
+}
