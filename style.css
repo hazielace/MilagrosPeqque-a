@@ -123,6 +123,14 @@ progress::-webkit-progress-value{
         margin: 20px 0;
         font-size: 25px;
     }
+
+    .portafolio-card-info h3{
+        font-size: 2.5vw;
+    }
+
+    .portafolio-card-info p{
+        font-size: 2vw;
+    }
 }
 .home{
     display: flex;
